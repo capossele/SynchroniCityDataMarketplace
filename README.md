@@ -16,8 +16,8 @@ It is needed to register an application in this portal in order to acquire the O
 
 There you have to use the following info for registering the app:
 * Name: The name you want for your instance
-* URL: Host and port where you plan to run the instance. http|https://host:port/
-* Callback URL: URL to be called in the OAuth process. http|https://host:port/auth/fiware/callback
+* URL: Host and port where you plan to run the instance. [http]|https://host:port/
+* Callback URL: URL to be called in the OAuth process. [http]|https://host:port/auth/fiware/callback
 
 ## SynchroniCity IoT Data Marketplace Deployment
 
@@ -31,7 +31,7 @@ modules with `docker-compose`. In particular, the following images have to be de
 * [charging-backend-synchronicity](https://hub.docker.com/r/angelocapossele/charging-backend-synchronicity/): Image including the charging backend module
 * [logic-proxy-synchronicity](https://hub.docker.com/r/conwetlab/angelocapossele/logic-proxy-synchronicity/): Image including the logic proxy module
 
-For deploying the SynchroniCity IoT Data Marketplace the first step is creating a `docker-compose.yml` file with the following contents (or use the one provided in this [GitHub repo] ):
+For deploying the SynchroniCity IoT Data Marketplace the first step is creating a `docker-compose.yml` file with the following contents (or use the one provided in this GitHub repo):
 
 ```
 version: '3'
@@ -149,7 +149,7 @@ networks:
 ```
 
 The next step is providing all the configuration files required by the different components using the configured volumes.
-It is possible to find valid configuration files (as well as the `docker-compose.yml`) in this [GitHub repo] (https://github.com/caposseleDigicat/SynchroniCityDataMarketplace)
+It is possible to find valid configuration files (as well as the `docker-compose.yml`) in this GitHub repo (https://github.com/caposseleDigicat/SynchroniCityDataMarketplace)
 
 As you can see, the different modules include environment variables and volumes. In particular:
 
