@@ -1,19 +1,18 @@
 # Business API Ecosystem Docker Image
 
-The [Business API Ecosystem](https://github.com/FIWARE-TMForum/Business-API-Ecosystem) can be deployed with Docker using
-two different approaches. On the one hand, for all the components that made up the Business API Ecosystem it has been 
+The [SynchroniCity IoT Data Marketplace](https://github.com/FIWARE-TMForum/Business-API-Ecosystem) can be deployed with Docker.
+For all the components that made up the SynchroniCity IoT Data Marketplace (based on the Business API Ecosystem (https://github.com/FIWARE-TMForum/Business-API-Ecosystem) it has been 
 provided a Docker image that can be used jointly with `docker-compose` in order to deploy and configure the ecosystem.
-On the other hand, this repo includes a single Docker image which already includes all the different Business API Ecosystem
-modules.
 
-The Business API Ecosystem requires instances of MySQL and MongoDB running. In this regard, you have three possibilities:
+The SynchroniCity IoT Data Marketplace requires instances of MySQL and MongoDB running. In this regard, you have three possibilities:
 * You can have your own instances deployed in your machine
 * You can manually run docker containers before executing the Business API Ecosystem
 * You can use docker-compose to automatically deploy both components
 
 ## OAuth2 Authentication
 
-The Business API Ecosystem authenticates with the [FIWARE identity manager](http://fiware-idm.readthedocs.io/en/latest/). In this regard, it is needed to register an application in this portal in order to acquire the OAuth2 credentials.
+The SynchroniCity IoT Data Marketplace authenticates with the [FIWARE identity manager](http://fiware-idm.readthedocs.io/en/latest/). 
+It is needed to register an application in this portal in order to acquire the OAuth2 credentials.
 
 There you have to use the following info for registering the app:
 * Name: The name you want for your instance
@@ -24,13 +23,13 @@ There you have to use the following info for registering the app:
 
 ### BAE Modules Images
 
-As stated, it is possible to deploy the Business API Ecosystem using the Docker images available for each of the BAE
+As stated, it is possible to deploy the SynchroniCity IoT Data Marketplace using the Docker images available for each of its
 modules with `docker-compose`. In particular, the following images have to be deployed:
 
-* [biz-ecosystem-apis](https://hub.docker.com/r/conwetlab/biz-ecosystem-apis/): Image including the TMForum APIs
-* [biz-ecosystem-rss](https://hub.docker.com/r/conwetlab/biz-ecosystem-rss/): Image Including the RSS module
-* [biz-ecosystem-charging-backend](https://hub.docker.com/r/conwetlab/biz-ecosystem-charging-backend/): Image including the charging backend module
-* [biz-ecosystem-logic-proxy](https://hub.docker.com/r/conwetlab/biz-ecosystem-logic-proxy/): Image including the logic proxy module
+* [bae-apis-synchronicity](https://hub.docker.com/r/angelocapossele/bae-apis-synchronicity/): Image including the TMForum APIs
+* [biz-ecosystem-rss](https://hub.docker.com/r/conwetlab/biz-ecosystem-rss/): Image Including the BAE RSS module
+* [charging-backend-synchronicity](https://hub.docker.com/r/angelocapossele/charging-backend-synchronicity/): Image including the charging backend module
+* [logic-proxy-synchronicity](https://hub.docker.com/r/conwetlab/angelocapossele/logic-proxy-synchronicity/): Image including the logic proxy module
 
 For deploying the BAE using this method the first step is creating a `docker-compose.yml` file with the following contents:
 
@@ -81,8 +80,8 @@ services:
             - ./charging-plugins:/business-ecosystem-charging-backend/src/plugins
             - ./charging-settings:/business-ecosystem-charging-backend/src/user_settings
         environment:
-          - PAYPAL_CLIENT_ID=
-          - PAYPAL_CLIENT_SECRET=
+          - PAYPAL_CLIENT_ID=client_id_here
+          - PAYPAL_CLIENT_SECRET=client_secret_here
 
     proxy:
         image: angelocapossele/logic-proxy-synchronicity:v6.4.0
@@ -150,32 +149,31 @@ networks:
 ```
 
 The next step is providing all the configuration files required by the different components using the configured volumes.
-It is possible to find valid configuration files (as well as the `docker-compose.yml`) in the [GitHub repo of the BAE](https://github.com/FIWARE-TMForum/Business-API-Ecosystem)
+It is possible to find valid configuration files (as well as the `docker-compose.yml`) in this [GitHub repo] (https://github.com/caposseleDigicat/SynchroniCityDataMarketplace)
 
 As you can see, the different modules include environment variables and volumes. In particular:
 
 **Charging**
 
-The biz-ecosystem-charging-backend needs the following environment variables:
+The charging-backend-synchronicity needs the following environment variables:
 * **PAYPAL_CLIENT_ID**: the client id of your application PayPal credentials used for charging users (a Sandbox account can be used for testing).
 * **PAYPAL_CLIENT_SECRET**: the client secret of your application PayPal credentials used for charging users (a Sandbox account can be used for testing).
 
-Additionally, the biz-ecosystem-charging-backend image contains 5 volumes. In particular:
+Additionally, the charging-backend-synchronicity image contains 4 volumes. In particular:
 * */business-ecosystem-charging-backend/src/media/bills*: This directory contains the PDF invoices generated by the Business Ecosystem Charging Backend
 * */business-ecosystem-charging-backend/src/media/assets*: This directory contains the different digital assets uploaded by sellers to the Business Ecosystem Charging Backend
 * */business-ecosystem-charging-backend/src/plugins*: This directory is used for providing asset plugins (see section *Installing Asset Plugins*)
 * */business-ecosystem-charging-backend/src/user_settings*: This directory must include the *settings.py* and *services_settings.py* files with the software configuration.
-* */business-ecosystem-charging-backend/src/wstore/asset_manager/resource_plugins/plugins*: This directory includes the code of the plugins already installed
 
 **Proxy**
 
-The biz-ecosystem-logic-proxy image contains 4 volumes. In particular:
+The logic-proxy-synchronicity image contains 4 volumes. In particular:
 * */business-ecosystem-logic-proxy/etc*: This directory must include the `config.js` file with the software configuration
-* */business-ecosystem-logic-proxy/indexes*: This directory contains the indexes used by the Business API Ecosystem for searching
+* */business-ecosystem-logic-proxy/indexes*: This directory contains the indexes used by the SynchroniCity IoT Data Marketplace for searching
 * */business-ecosystem-logic-proxy/themes*: This directory contains the themes that can be used to customize the web portal
 * */business-ecosystem-logic-proxy/static*: This directory includes the static files ready to be rendered including the selected theme and js files
 
-Finally, the biz-ecosystem-logic-proxy uses the environment variable *NODE_ENV* to determine if the software is being used
+Finally, the logic-proxy-synchronicity uses the environment variable *NODE_ENV* to determine if the software is being used
 in *development* or in *production* mode. 
 
 > **Note**
@@ -187,7 +185,7 @@ Once you have created the files, run the following command:
 docker-compose up
 ```
 
-Then, the Business API Ecosystem should be up and running in `http://YOUR_HOST:PORT/` replacing `YOUR_HOST` by the host of your machine and `PORT` by the port provided in the Business Ecosystem Logic Proxy configuration 
+Then, the SynchroniCity IoT Data Marketplace should be up and running in `http://YOUR_HOST:PORT/` replacing `YOUR_HOST` by the host of your machine and `PORT` by the port provided in the Business Ecosystem Logic Proxy configuration 
 
 Once the different containers are running, you can stop them using:
 
@@ -209,7 +207,7 @@ docker-compose down
 
 ## Installing Asset Plugins
 
-As you may know, the Business API Ecosystem is able to sell different types of digital assets
+As you may know, the SynchroniCity IoT Data Marketplace is able to sell different types of digital assets
 by loading asset plugins in its Charging Backend. In this context, it is possible to install
 asset plugins in the current Docker image as follows:
 
@@ -227,7 +225,7 @@ cd /apis/business-ecosystem-charging-backend/src
 
 4) Load the plugin
 ```
-./manage.py loadplugin ./plugins/pluginfile.zip
+./manage.py loadplugin ./plugins/Orion.zip
 ```
 
 5) Restart Apache
