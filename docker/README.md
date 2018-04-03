@@ -80,10 +80,9 @@ services:
             - ./charging-assets:/business-ecosystem-charging-backend/src/media/assets
             - ./charging-plugins:/business-ecosystem-charging-backend/src/plugins
             - ./charging-settings:/business-ecosystem-charging-backend/src/user_settings
-            #- ./charging-inst-plugins:/business-ecosystem-charging-backend/src/wstore/asset_manager/resource_plugins/plugins
         environment:
-          - PAYPAL_CLIENT_ID=AdQVjEx5-_sdUUsxbUzeDOKb4e3GxRvuSaz_UPOHsrbr7XZffPZakeeJFi0UL-ZLYzqYGLfO7mJJHf-l
-          - PAYPAL_CLIENT_SECRET=EGlWcd1tEKBWoIc3Lm7QBaP8nWAKswKb32EuXHnYz_g40FPxzbq6nipJ_F3gLb-Uu_MaWSZOL4Pqtnkl
+          - PAYPAL_CLIENT_ID=
+          - PAYPAL_CLIENT_SECRET=
 
     proxy:
         image: angelocapossele/logic-proxy-synchronicity:v6.4.0
