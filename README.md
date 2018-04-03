@@ -1,6 +1,6 @@
 # SynchroniCity IoT Data Marketplace Docker Image
 
-The [SynchroniCity IoT Data Marketplace](https://github.com/FIWARE-TMForum/Business-API-Ecosystem) can be deployed with Docker.
+The [SynchroniCity IoT Data Marketplace](https://github.com/caposseleDigicat/SynchroniCityDataMarketplace/) can be deployed with Docker.
 For all the components that made up the SynchroniCity IoT Data Marketplace (based on the Business API Ecosystem (https://github.com/FIWARE-TMForum/Business-API-Ecosystem) it has been 
 provided a Docker image that can be used jointly with `docker-compose` in order to deploy and configure the ecosystem.
 
