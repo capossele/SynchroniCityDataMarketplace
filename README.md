@@ -1,4 +1,4 @@
-# Business API Ecosystem Docker Image
+# SynchroniCity IoT Data Marketplace Docker Image
 
 The [SynchroniCity IoT Data Marketplace](https://github.com/FIWARE-TMForum/Business-API-Ecosystem) can be deployed with Docker.
 For all the components that made up the SynchroniCity IoT Data Marketplace (based on the Business API Ecosystem (https://github.com/FIWARE-TMForum/Business-API-Ecosystem) it has been 
@@ -19,9 +19,9 @@ There you have to use the following info for registering the app:
 * URL: Host and port where you plan to run the instance. http|https://host:port/
 * Callback URL: URL to be called in the OAuth process. http|https://host:port/auth/fiware/callback
 
-## BAE Deployment
+## SynchroniCity IoT Data Marketplace Deployment
 
-### BAE Modules Images
+### SynchroniCity IoT Data Marketplace Modules Images
 
 As stated, it is possible to deploy the SynchroniCity IoT Data Marketplace using the Docker images available for each of its
 modules with `docker-compose`. In particular, the following images have to be deployed:
