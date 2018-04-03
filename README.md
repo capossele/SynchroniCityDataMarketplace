@@ -164,15 +164,15 @@ Additionally, the charging-backend-synchronicity image contains 4 volumes. In pa
 * */business-ecosystem-charging-backend/src/media/assets*: This directory contains the different digital assets uploaded by sellers to the Business Ecosystem Charging Backend
 * */business-ecosystem-charging-backend/src/plugins*: This directory is used for providing asset plugins (see section *Installing Asset Plugins*)
 * */business-ecosystem-charging-backend/src/user_settings*: This directory must include the *settings.py* and *services_settings.py* files with the software configuration. More specifically, the *services_settings.py* includes:
-    * KEYSTONE_PROTOCOL:  http or https
+    * KEYSTONE_PROTOCOL: http or https
     * KEYSTONE_HOST: host where is running the IDM (e.g., 'idm.docker')
-    * KEYROCK_PORT: port number where is listening the Keyrock instance (e.g., '8000')
-    * KEYSTONE_PORT: port number where is listening the Keystone instance (e.g., '5000')
+    * KEYROCK_PORT: port number where the *Keyrock* instance is listening (e.g., '8000')
+    * KEYSTONE_PORT: port number where the *Keystone* instance  is listening (e.g., '5000')
     * KEYSTONE_USER: admin username of the IDM (e.g., 'idm')
     * KEYSTONE_PWD: admin password of the IDM (e.g., 'idm')
     * ADMIN_DOMAIN: admin domain on the IDM (e.g., 'Default') 
     * APP_CLIENT_ID: Client ID of the Orion context broker registered on the IDM
-    * APP_CLIENT_SECRET: Client Secret of the Orion context broker registered on the IDM
+    * APP_CLIENT_SECRET: Client Secret of the Orion Context Broker registered on the IDM
 
 
 **Proxy**
@@ -215,11 +215,9 @@ Additionally, you can terminate the different containers by executing:
 docker-compose down
 ```
 
-## Installing Asset Plugins
+## Installing Orion Query Plugin
 
-As you may know, the SynchroniCity IoT Data Marketplace is able to sell different types of digital assets
-by loading asset plugins in its Charging Backend. In this context, it is possible to install
-asset plugins in the current Docker image as follows:
+As you may know, the SynchroniCity IoT Data Marketplace is able to sell different types of data sources. To support this functionality, it must be installed the Orion Query plugin (also included in the current Github repo) as follows:
 
 1) Copy the plugin file into the host directory of the volume */business-ecosystem-charging-backend/src/plugins*
 
