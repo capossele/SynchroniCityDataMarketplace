@@ -45,8 +45,8 @@ services:
             - ./charging-settings:/business-ecosystem-charging-backend/src/user_settings
             #- ./charging-inst-plugins:/business-ecosystem-charging-backend/src/wstore/asset_manager/resource_plugins/plugins
         environment:
-          - PAYPAL_CLIENT_ID=
-          - PAYPAL_CLIENT_SECRET=
+          - PAYPAL_CLIENT_ID=client_id_here
+          - PAYPAL_CLIENT_SECRET=client_secret_here
 
     proxy:
         image: angelocapossele/logic-proxy-synchronicity:v6.4.0
