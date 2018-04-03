@@ -19,6 +19,8 @@ There you have to use the following info for registering the app:
 * URL: Host and port where you plan to run the instance. [http]|https://host:port/
 * Callback URL: URL to be called in the OAuth process. [http]|https://host:port/auth/fiware/callback
 
+You must also create a new role called 'seller' and assign this role to the user authorized to be seller (data provider) in the marketplace.
+
 ## SynchroniCity IoT Data Marketplace Deployment
 
 ### SynchroniCity IoT Data Marketplace Modules Images
