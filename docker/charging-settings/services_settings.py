@@ -15,6 +15,7 @@ RSS = 'http://rss.docker:8080/DSRevenueSharing'
 
 AUTHORIZE_SERVICE = 'http://proxy.docker:8004/authorizeService/token'
 
+# Keyrock/Keystone settings
 KEYSTONE_PROTOCOL = 'http'
 KEYSTONE_HOST = 'idm.docker'
 KEYROCK_PORT = '8000'
@@ -23,6 +24,6 @@ KEYSTONE_USER = ''
 KEYSTONE_PWD = ''
 ADMIN_DOMAIN = ''
 
-#APP SETTINGS (e.g., Orion context broker)
+# APP SETTINGS (e.g., Orion context broker)
 APP_CLIENT_ID = ''
 APP_CLIENT_SECRET = ''
