@@ -164,18 +164,16 @@ Additionally, the charging-backend-synchronicity image contains 4 volumes. In pa
 * */business-ecosystem-charging-backend/src/media/assets*: This directory contains the different digital assets uploaded by sellers to the Business Ecosystem Charging Backend
 * */business-ecosystem-charging-backend/src/plugins*: This directory is used for providing asset plugins (see section *Installing Asset Plugins*)
 * */business-ecosystem-charging-backend/src/user_settings*: This directory must include the *settings.py* and *services_settings.py* files with the software configuration. More specifically, the *services_settings.py* includes:
-    * KEYSTONE_PROTOCOL = 'http'
-    * KEYSTONE_HOST = 'idm.docker'
-    * KEYROCK_PORT = '8000'
-    * KEYSTONE_PORT = '5000'
-    * KEYSTONE_USER = ''
-    * KEYSTONE_PWD = ''
-    * ADMIN_DOMAIN = ''
+    * KEYSTONE_PROTOCOL:  http or https
+    * KEYSTONE_HOST: host where is running the IDM (e.g., 'idm.docker')
+    * KEYROCK_PORT: port number where is listening the Keyrock instance (e.g., '8000')
+    * KEYSTONE_PORT: port number where is listening the Keystone instance (e.g., '5000')
+    * KEYSTONE_USER: admin username of the IDM (e.g., 'idm')
+    * KEYSTONE_PWD: admin password of the IDM (e.g., 'idm')
+    * ADMIN_DOMAIN: admin domain on the IDM (e.g., 'Default') 
+    * APP_CLIENT_ID: Client ID of the Orion context broker registered on the IDM
+    * APP_CLIENT_SECRET: Client Secret of the Orion context broker registered on the IDM
 
-
-# APP SETTINGS (e.g., Orion context broker)
-APP_CLIENT_ID = ''
-APP_CLIENT_SECRET = ''
 
 **Proxy**
 
