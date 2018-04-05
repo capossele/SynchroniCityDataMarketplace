@@ -60,7 +60,7 @@ modules with `docker-compose`. In particular, the following images have to be de
 
 For deploying the SynchroniCity IoT Data Marketplace the first step is creating a `docker-compose.yml` file with the following contents (or use the one provided in this GitHub repo):
 
-.. code-block:: docker
+.. code-block:: yaml
     version: '3'
     services:
         mongo:
@@ -225,21 +225,21 @@ in *development* or in *production* mode.
 > **Note**
 > The *config.js* file must include an extra setting not provided by default called *config.extPort* that must include the port where the proxy is going to run in the host machine
 
-Once you have created the files, run the following command:
+Once you have created the files, run the following command ::
 
     $ docker-compose up
 
 Then, the SynchroniCity IoT Data Marketplace should be up and running in `http://YOUR_HOST:PORT/` replacing `YOUR_HOST` by the host of your machine and `PORT` by the port provided in the Business Ecosystem Logic Proxy configuration 
 
-Once the different containers are running, you can stop them using:
+Once the different containers are running, you can stop them using ::
 
     $ docker-compose stop
 
-And start them again using:
+And start them again using ::
 
     $ docker-compose start
 
-Additionally, you can terminate the different containers by executing:
+Additionally, you can terminate the different containers by executing ::
 
     $ docker-compose down
 
@@ -250,25 +250,24 @@ As you may know, the SynchroniCity IoT Data Marketplace is able to sell differen
 
 1) Copy the plugin file into the host directory of the volume */business-ecosystem-charging-backend/src/plugins*
 
-2) Enter the running container:
+2) Enter the running container ::
 
     $ docker exec -i -t your-container /bin/bash
 
 
-3) Go to the installation directory
+3) Go to the installation directory ::
 
     $ cd /apis/business-ecosystem-charging-backend/src
 
 
-4) Load the plugin
+4) Load the plugin ::
 
     $ ./manage.py loadplugin ./plugins/Orion.zip
 
 
-5) Restart Apache
+5) Restart Apache ::
 
     $ service apache2 restart
-
 
 
 ------------------------
