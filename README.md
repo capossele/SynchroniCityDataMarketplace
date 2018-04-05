@@ -6,7 +6,7 @@ provided a Docker image that can be used jointly with `docker-compose` in order 
 
 The SynchroniCity IoT Data Marketplace requires instances of MySQL and MongoDB running. In this regard, you have three possibilities:
 * You can have your own instances deployed in your machine
-* You can manually run docker containers before executing the Business API Ecosystem
+* You can manually run docker containers before executing the SynchroniCity IoT Data Marketplace
 * You can use docker-compose to automatically deploy both components
 
 ## OAuth2 Authentication

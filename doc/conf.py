@@ -12,17 +12,17 @@ source_parsers = {
             '.md': CommonMarkParser,		
         }
 master_doc = 'index'
-project = u'biz-ecosystem'
-copyright = u'2016'
+project = u'SynchroniCity IoT Data Marketplace'
+copyright = u'2018'
 version = 'latest'
 release = 'latest'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
-htmlhelp_basename = 'biz-ecosystem'
+htmlhelp_basename = 'SynchroniCity-IoT-Data-Marketplace'
 html_theme = 'sphinx_rtd_theme'
 file_insertion_enabled = False
 latex_documents = [
-  ('index', 'biz-ecosystem.tex', u'Business API Ecosystem Documentation',
+  ('index', 'SynchroniCity-IoT-Data-Marketplace.tex', u'SynchroniCity IoT Data Marketplace',
    u'', 'manual'),
 ]
 
