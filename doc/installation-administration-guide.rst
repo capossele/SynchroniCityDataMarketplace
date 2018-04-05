@@ -50,7 +50,6 @@ There you have to use the following info for registering the app:
 
 You must also create a new role called 'seller' and assign this role to the user authorized to be seller (data provider) in the marketplace.
 
-
 Deploying the SynchroniCity IoT Data Marketplace
 =====================================
 
@@ -184,7 +183,7 @@ Configuration
 -------------
 
 The next step is providing all the configuration files required by the different components using the configured volumes.
-It is possible to find valid configuration files (as well as the *docker-compose.yml*) in this `GitHub repo <https://github.com/caposseleDigicat/SynchroniCityDataMarketplace>`.
+It is possible to find valid configuration files (as well as the *docker-compose.yml*) in this `GitHub repo <https://github.com/caposseleDigicat/SynchroniCityDataMarketplace>`__.
 
 As you can see, the different modules include environment variables and volumes. In particular:
 
@@ -269,7 +268,7 @@ a plugin based solution, where all the characteristics of a data source type are
 in the SynchroniCity IoT Data Marketplace.
 
 As you may know, the SynchroniCity IoT Data Marketplace is able to sell NGSI compliant data sources. To support this functionality, 
-it must be installed the Orion Query plugin (also included in this `GitHub repo <https://github.com/caposseleDigicat/SynchroniCityDataMarketplace>`) 
+it must be installed the Orion Query plugin (also included in this `GitHub repo <https://github.com/caposseleDigicat/SynchroniCityDataMarketplace>`__) 
 as follows ::
 
 1) Copy the plugin file into the host directory of the volume */business-ecosystem-charging-backend/src/plugins*
