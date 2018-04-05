@@ -60,7 +60,7 @@ modules with `docker-compose`. In particular, the following images have to be de
 
 For deploying the SynchroniCity IoT Data Marketplace the first step is creating a `docker-compose.yml` file with the following contents (or use the one provided in this GitHub repo):
 
-.. code::
+.. code-block:: docker
     version: '3'
     services:
         mongo:
