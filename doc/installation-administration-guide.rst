@@ -248,9 +248,25 @@ Additionally, you can terminate the different containers by executing ::
     $ docker-compose down
 
 
-## Installing Orion Query Plugin
+---------------------------------
+Installing the Orion Query Plugin
+---------------------------------
 
-As you may know, the SynchroniCity IoT Data Marketplace is able to sell different types of data sources. To support this functionality, it must be installed the Orion Query plugin (also included in the current Github repo) as follows:
+The SynchroniCity IoT Data Marketplace is intended to support the monetization of different kind of data sources. The different
+kind of data sources that may be wanted to be monetized will be heterogeneous and potentially very different between them.
+
+Additionally, for each type of data source different validations and activation mechanisms will be required. For example, if the
+data source is an NGSI entity, it will be required to validate that the provider is the owner of that entity. Moreover, when a customer
+acquires the access to that entity, it will be required to notify the Identity Management component that a new user has access to it.
+
+The huge differences between the different types of data sources that can be monetized in the SynchroniCity IoT Data Marketplace makes
+impossible to include its validations and characteristics as part of the core software. For this reason, it has been created
+a plugin based solution, where all the characteristics of a data source type are implemented in a plugin that can be loaded
+in the SynchroniCity IoT Data Marketplace.
+
+As you may know, the SynchroniCity IoT Data Marketplace is able to sell NGSI compliant data sources. To support this functionality, 
+it must be installed the Orion Query plugin (also included in this `GitHub repo <https://github.com/caposseleDigicat/SynchroniCityDataMarketplace>`) 
+as follows ::
 
 1) Copy the plugin file into the host directory of the volume */business-ecosystem-charging-backend/src/plugins*
 
@@ -274,46 +290,8 @@ As you may know, the SynchroniCity IoT Data Marketplace is able to sell differen
     $ service apache2 restart
 
 
-------------------------
-Installing Asset Plugins
-------------------------
-
-The Business API Ecosystem is intended to support the monetization of different kind of digital assets. The different
-kind of assets that may be wanted to be monetized will be heterogeneous and potentially very different between them.
-
-Additionally, for each type of asset different validations and activation mechanisms will be required. For example, if the
-asset is a CKAN dataset, it will be required to validate that the provider is the owner of the dataset. Moreover, when a customer
-acquires the dataset, it will be required to notify CKAN that a new user has access to it.
-
-The huge differences between the different types of assets that can be monetized in the Business API Ecosystem makes
-impossible to include its validations and characteristics as part of the core software. For this reason, it has been created
-a plugin based solution, where all the characteristics of an asset type are implemented in a plugin that can be loaded
-in the Business API Ecosystem.
-
-To include an asset plugin execute the following command in the Charging Backend: ::
-
-    $ ./manage.py loadplugin ckandataset.zip
-
-It is possible to list the existing plugins with the following command: ::
-
-    $ ./manage.py listplugins
-
-To remove an asset plugin, execute the following command providing the plugin id given by the *listplugins* command ::
-
-    $ ./manage.py removeplugin ckan-dataset
-
-
 .. note::
-    For specific details on how to create a plugin and its internal structure, have a look at the Business API Ecosystem Programmer Guide
-
-At the time of writing, the following plugins are available:
-
-* `Basic File <https://github.com/FIWARE-TMForum/biz-basic-plugins>`__: Allows the creation of products by providing files as digital assets. No validations or processing is done
-* `Basic URL <https://github.com/FIWARE-TMForum/biz-basic-plugins>`__: Allows the creation of products by providing URLs as digital assets. No validations or processing is done
-* `WireCloud Component <https://github.com/FIWARE-TMForum/wstore-wirecloud-plugin>`__: Allows the monetization of WireCloud components, including Widgets, operators, and mashups
-* `Accountable Service <https://github.com/FIWARE-TMForum/biz-accountable-service-plugin>`__ : Allows the monetization of services protected by the `Accounting Proxy <https://github.com/FIWARE-TMForum/Accounting-Proxy>`__, including Orion Context Broker queries
-* `CKAN Dataset <https://github.com/FIWARE-TMForum/biz-ckan-plugin>`__ : Allows the monetization of CKAN datasets
-
+    For specific details on how to create a plugin and its internal structure, have a look at the SynchroniCity IoT Data Marketplace Programmer Guide
 
 -----------------------
 Sanity check Procedures
@@ -330,9 +308,9 @@ Please note that the following information is required before starting with the 
 * The host and port where the Proxy is running
 * A valid IdM user with the *Seller* role
 
-To Check if the Business API Ecosystem is running, follow the next steps:
+To Check if the SynchroniCity IoT Data Marketplace is running, follow the next steps:
 
-1. Open a browser and enter to the Business API Ecosystem
+1. Open a browser and enter to the SynchroniCity IoT Data Marketplace
 2. Click on the *Sign In* Button
 
 .. image:: ./images/installation/sanity1.png
@@ -458,8 +436,8 @@ Resource Availability
 =====================
 
 Memory use depends on the number of concurrent users as well as the free memory available and the hard disk.
-The Business API Ecosystem requires a minimum of 1024 MB of available RAM memory, but 2048 MB of free memory are recomended.
-Moreover, the Business API Ecosystem requires at least 15 GB of hard disk space.
+The SynchroniCity IoT Data Marketplace requires a minimum of 1024 MB of available RAM memory, but 2048 MB of free memory are recomended.
+Moreover, the SynchroniCity IoT Data Marketplace requires at least 15 GB of hard disk space.
 
 Remote Service Access
 =====================
