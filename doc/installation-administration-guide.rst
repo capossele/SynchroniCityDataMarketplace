@@ -297,7 +297,7 @@ as follows ::
     For specific details on how to create a plugin and its internal structure, have a look at the SynchroniCity IoT Data Marketplace Programmer Guide
 
 -----------------------
-Sanity check Procedures
+Sanity Check Procedures
 -----------------------
 
 The Sanity Check Procedures are the steps that a System Administrator will take to verify that an installation is ready
