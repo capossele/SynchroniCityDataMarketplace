@@ -6,7 +6,7 @@ Installation and Administration Guide
 Introduction
 ------------
 
-This installation and administration guide covers the SynchroniCity IoT Data Marketplace version 6.4.0 based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__ , corresponding to FIWARE release 6.
+This installation and administration guide covers the SynchroniCity IoT Data Marketplace version 6.4.0 based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__, corresponding to FIWARE release 6.
 Any feedback on this document is highly welcomed, including bugs, typos or things you think should be included but aren't.
 Please send them by creating an issue at `GitHub Issues`_
 
@@ -18,11 +18,9 @@ Installation
 ------------
 
 The SynchroniCity IoT Data Marketplace can be deployed with Docker. For all the components that made up the 
-SynchroniCity IoT Data Marketplace (based on the `Business API Ecosystem`_ it has been provided a Docker image that can be used 
+SynchroniCity IoT Data Marketplace (based on the `Business API Ecosystem <https://github.com/FIWARE-TMForum/Business-API-Ecosystem>`__ it has been provided a Docker image that can be used 
 jointly with docker-compose in order to deploy and configure the ecosystem.
 
-
-.. _Business API Ecosystem: https://github.com/FIWARE-TMForum/Business-API-Ecosystem
 
 Requirements
 ============
@@ -45,9 +43,9 @@ The SynchroniCity IoT Data Marketplace authenticates with the [FIWARE identity m
 It is needed to register an application in this portal in order to acquire the OAuth2 credentials.
 
 There you have to use the following info for registering the app:
-* Name: The name you want for your instance
-* URL: Host and port where you plan to run the instance. [http]|https://host:port/
-* Callback URL: URL to be called in the OAuth process. [http]|https://host:port/auth/fiware/callback
+    * Name: The name you want for your instance
+    * URL: Host and port where you plan to run the instance. [http]|https://host:port/
+    * Callback URL: URL to be called in the OAuth process. [http]|https://host:port/auth/fiware/callback
 
 Deploying the SynchroniCity IoT Data Marketplace
 =====================================
@@ -55,127 +53,127 @@ Deploying the SynchroniCity IoT Data Marketplace
 As stated, it is possible to deploy the SynchroniCity IoT Data Marketplace using the Docker images available for each of its
 modules with `docker-compose`. In particular, the following images have to be deployed:
 
-* [bae-apis-synchronicity](https://hub.docker.com/r/angelocapossele/bae-apis-synchronicity/): Image including the TMForum APIs
-* [biz-ecosystem-rss](https://hub.docker.com/r/conwetlab/biz-ecosystem-rss/): Image Including the BAE RSS module
-* [charging-backend-synchronicity](https://hub.docker.com/r/angelocapossele/charging-backend-synchronicity/): Image including the charging backend module
-* [logic-proxy-synchronicity](https://hub.docker.com/r/conwetlab/angelocapossele/logic-proxy-synchronicity/): Image including the logic proxy module
+* *bae-apis-synchronicity* (https://hub.docker.com/r/angelocapossele/bae-apis-synchronicity/): Image including the TMForum APIs
+* *biz-ecosystem-rss* (https://hub.docker.com/r/conwetlab/biz-ecosystem-rss/): Image Including the BAE RSS module
+* *charging-backend-synchronicity* (https://hub.docker.com/r/angelocapossele/charging-backend-synchronicity/): Image including the charging backend module
+* *logic-proxy-synchronicity* (https://hub.docker.com/r/conwetlab/angelocapossele/logic-proxy-synchronicity/): Image including the logic proxy module
 
 For deploying the SynchroniCity IoT Data Marketplace the first step is creating a `docker-compose.yml` file with the following contents (or use the one provided in this GitHub repo):
 
-```
-version: '3'
-services:
-    mongo:
-        image: mongo:3.2
-        restart: always
-        ports:
-            - 27017:27017
-        networks:
-            main:
-        volumes:
-            - ./mongo-data:/data/db
+.. code::
+    version: '3'
+    services:
+        mongo:
+            image: mongo:3.2
+            restart: always
+            ports:
+                - 27017:27017
+            networks:
+                main:
+            volumes:
+                - ./mongo-data:/data/db
 
-    mysql:
-        image: mysql:latest
-        restart: always
-        ports:
-            - 3333:3306
-        volumes:
-            - ./mysql-data:/var/lib/mysql
-        networks:
-            main:
-        environment:
-            - MYSQL_ROOT_PASSWORD=my-secret-pw
-            - MYSQL_DATABASE=RSS
+        mysql:
+            image: mysql:latest
+            restart: always
+            ports:
+                - 3333:3306
+            volumes:
+                - ./mysql-data:/var/lib/mysql
+            networks:
+                main:
+            environment:
+                - MYSQL_ROOT_PASSWORD=my-secret-pw
+                - MYSQL_DATABASE=RSS
 
-    charging:
-        image: angelocapossele/charging-backend-synchronicity:v6.4.0
-        restart: always
-        links:
-            - mongo
-        depends_on:
-            - mongo
-            - apis
-            - rss
-        ports:
-            - 8006:8006
-        networks:
-            main:
-                aliases:
-                    - charging.docker
-        volumes:
-            - ./charging-bills:/business-ecosystem-charging-backend/src/media/bills
-            - ./charging-assets:/business-ecosystem-charging-backend/src/media/assets
-            - ./charging-plugins:/business-ecosystem-charging-backend/src/plugins
-            - ./charging-settings:/business-ecosystem-charging-backend/src/user_settings
-        environment:
-          - PAYPAL_CLIENT_ID=client_id_here
-          - PAYPAL_CLIENT_SECRET=client_secret_here
+        charging:
+            image: angelocapossele/charging-backend-synchronicity:v6.4.0
+            restart: always
+            links:
+                - mongo
+            depends_on:
+                - mongo
+                - apis
+                - rss
+            ports:
+                - 8006:8006
+            networks:
+                main:
+                    aliases:
+                        - charging.docker
+            volumes:
+                - ./charging-bills:/business-ecosystem-charging-backend/src/media/bills
+                - ./charging-assets:/business-ecosystem-charging-backend/src/media/assets
+                - ./charging-plugins:/business-ecosystem-charging-backend/src/plugins
+                - ./charging-settings:/business-ecosystem-charging-backend/src/user_settings
+            environment:
+            - PAYPAL_CLIENT_ID=client_id_here
+            - PAYPAL_CLIENT_SECRET=client_secret_here
 
-    proxy:
-        image: angelocapossele/logic-proxy-synchronicity:v6.4.0
-        restart: always
-        links:
-            - mongo
-        depends_on:
-            - mongo
-            - apis
-        ports:
-            - 8004:8004
-        networks:
-            main:
-                aliases:
-                    - proxy.docker
-        volumes:
-            - ./proxy-conf:/business-ecosystem-logic-proxy/etc
-            - ./proxy-indexes:/business-ecosystem-logic-proxy/indexes
-            - ./proxy-themes:/business-ecosystem-logic-proxy/themes
-            - ./proxy-static:/business-ecosystem-logic-proxy/static
-        environment:
-            - NODE_ENV=development
+        proxy:
+            image: angelocapossele/logic-proxy-synchronicity:v6.4.0
+            restart: always
+            links:
+                - mongo
+            depends_on:
+                - mongo
+                - apis
+            ports:
+                - 8004:8004
+            networks:
+                main:
+                    aliases:
+                        - proxy.docker
+            volumes:
+                - ./proxy-conf:/business-ecosystem-logic-proxy/etc
+                - ./proxy-indexes:/business-ecosystem-logic-proxy/indexes
+                - ./proxy-themes:/business-ecosystem-logic-proxy/themes
+                - ./proxy-static:/business-ecosystem-logic-proxy/static
+            environment:
+                - NODE_ENV=development
 
-    apis:
-        image: angelocapossele/bae-apis-synchronicity:v6.4.0
-        restart: always
-        ports:
-            - 4848:4848
-            - 8080:8080
-        links:
-            - mysql
-        depends_on:
-            - mysql
-        networks:
-            main:
-                aliases:
-                    - apis.docker
-        volumes:
-            - ./apis-conf:/etc/default/tmf/
-        environment:
-            - MYSQL_ROOT_PASSWORD=my-secret-pw
-            - MYSQL_HOST=mysql
+        apis:
+            image: angelocapossele/bae-apis-synchronicity:v6.4.0
+            restart: always
+            ports:
+                - 4848:4848
+                - 8080:8080
+            links:
+                - mysql
+            depends_on:
+                - mysql
+            networks:
+                main:
+                    aliases:
+                        - apis.docker
+            volumes:
+                - ./apis-conf:/etc/default/tmf/
+            environment:
+                - MYSQL_ROOT_PASSWORD=my-secret-pw
+                - MYSQL_HOST=mysql
 
-    rss:
-        image: conwetlab/biz-ecosystem-rss:v6.4.0
-        restart: always
-        ports:
-            - 9999:8080
-            - 4444:4848
-            - 1111:8181
-        links:
-            - mysql
-        depends_on:
-            - mysql
-        networks:
-            main:
-                aliases:
-                    - rss.docker
-        volumes:
-            - ./rss-conf:/etc/default/rss
+        rss:
+            image: conwetlab/biz-ecosystem-rss:v6.4.0
+            restart: always
+            ports:
+                - 9999:8080
+                - 4444:4848
+                - 1111:8181
+            links:
+                - mysql
+            depends_on:
+                - mysql
+            networks:
+                main:
+                    aliases:
+                        - rss.docker
+            volumes:
+                - ./rss-conf:/etc/default/rss
 
-networks:
-    main:
-        external: true
-```
+    networks:
+        main:
+            external: true
+
 
 
 
