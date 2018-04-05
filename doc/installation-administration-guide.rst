@@ -6,7 +6,7 @@ Installation and Administration Guide
 Introduction
 ------------
 
-This installation and administration guide covers the SynchroniCity IoT Data Marketplace version 6.4.0 based on the `Business API Ecosystem`_, corresponding to FIWARE release 6.
+This installation and administration guide covers the SynchroniCity IoT Data Marketplace version 6.4.0 based on the `Business API Ecosystem`_ , corresponding to FIWARE release 6.
 Any feedback on this document is highly welcomed, including bugs, typos or things you think should be included but aren't.
 Please send them by creating an issue at `GitHub Issues`_
 
@@ -189,7 +189,8 @@ It is possible to find valid configuration files (as well as the `docker-compose
 
 As you can see, the different modules include environment variables and volumes. In particular:
 
-**Charging**
+Charging
+========
 
 The charging-backend-synchronicity needs the following environment variables:
 * **PAYPAL_CLIENT_ID**: the client id of your application PayPal credentials used for charging users (a Sandbox account can be used for testing).
@@ -211,7 +212,8 @@ Additionally, the charging-backend-synchronicity image contains 4 volumes. In pa
     * APP_CLIENT_SECRET: Client Secret of the Orion Context Broker registered on the IDM
 
 
-**Proxy**
+Logic Proxy
+===========
 
 The logic-proxy-synchronicity image contains 4 volumes. In particular:
 * */business-ecosystem-logic-proxy/etc*: This directory must include the `config.js` file with the software configuration
@@ -227,29 +229,22 @@ in *development* or in *production* mode.
 
 Once you have created the files, run the following command:
 
-```
-docker-compose up
-```
+    $ docker-compose up
 
 Then, the SynchroniCity IoT Data Marketplace should be up and running in `http://YOUR_HOST:PORT/` replacing `YOUR_HOST` by the host of your machine and `PORT` by the port provided in the Business Ecosystem Logic Proxy configuration 
 
 Once the different containers are running, you can stop them using:
 
-```
-docker-compose stop
-```
+    $ docker-compose stop
 
 And start them again using:
 
-```
-docker-compose start
-```
+    $ docker-compose start
 
 Additionally, you can terminate the different containers by executing:
 
-```
-docker-compose down
-```
+    $ docker-compose down
+
 
 ## Installing Orion Query Plugin
 
@@ -258,24 +253,24 @@ As you may know, the SynchroniCity IoT Data Marketplace is able to sell differen
 1) Copy the plugin file into the host directory of the volume */business-ecosystem-charging-backend/src/plugins*
 
 2) Enter the running container:
-```
-docker exec -i -t your-container /bin/bash
-```
+
+    $ docker exec -i -t your-container /bin/bash
+
 
 3) Go to the installation directory
-```
-cd /apis/business-ecosystem-charging-backend/src
-```
+
+    $ cd /apis/business-ecosystem-charging-backend/src
+
 
 4) Load the plugin
-```
-./manage.py loadplugin ./plugins/Orion.zip
-```
+
+    $ ./manage.py loadplugin ./plugins/Orion.zip
+
 
 5) Restart Apache
-```
-service apache2 restart
-```
+
+    $ service apache2 restart
+
 
 
 ------------------------
