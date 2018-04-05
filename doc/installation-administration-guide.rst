@@ -330,15 +330,11 @@ To Check if the SynchroniCity IoT Data Marketplace is running, follow the next s
 
 .. image:: ./images/installation/sanity4.png
 
-6. Go to *My Stock* section
-
-.. image:: ./images/installation/sanity5.png
-
-7. Click on *New* for creating a new catalog
+6. Go to *My Stock* section and click on *New* for creating a new catalog
 
 .. image:: ./images/installation/sanity6.png
 
-8. Provide a name and a description and click on *Next*. Then click on *Create*
+7. Provide a name and a description and click on *Next*. Then click on *Create*
 
 .. image:: ./images/installation/sanity7.png
 .. image:: ./images/installation/sanity8.png
@@ -346,12 +342,10 @@ To Check if the SynchroniCity IoT Data Marketplace is running, follow the next s
 
 9. Click on *Launched*, and then click on *Update*
 
-.. image:: ./images/installation/sanity10.png
 .. image:: ./images/installation/sanity11.png
 
 10. Go to *Home*, and ensure the new catalog appears
 
-.. image:: ./images/installation/sanity12.png
 .. image:: ./images/installation/sanity13.png
 
 List of Running Processes
