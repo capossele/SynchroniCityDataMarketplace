@@ -251,9 +251,9 @@ Additionally, you can terminate the different containers by executing ::
     $ docker-compose down
 
 
----------------------------------
+
 Installing the Orion Query Plugin
----------------------------------
+=================================
 
 The SynchroniCity IoT Data Marketplace is intended to support the monetization of different kind of data sources. The different
 kind of data sources that may be wanted to be monetized will be heterogeneous and potentially very different between them.
