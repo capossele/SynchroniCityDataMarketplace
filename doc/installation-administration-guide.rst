@@ -43,9 +43,13 @@ The SynchroniCity IoT Data Marketplace authenticates with the [FIWARE identity m
 It is needed to register an application in this portal in order to acquire the OAuth2 credentials.
 
 There you have to use the following info for registering the app:
+
     * Name: The name you want for your instance
     * URL: Host and port where you plan to run the instance. [http]|https://host:port/
     * Callback URL: URL to be called in the OAuth process. [http]|https://host:port/auth/fiware/callback
+
+You must also create a new role called 'seller' and assign this role to the user authorized to be seller (data provider) in the marketplace.
+
 
 Deploying the SynchroniCity IoT Data Marketplace
 =====================================
