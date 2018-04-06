@@ -126,7 +126,6 @@ catalogs, data source specifications and offerings. All these objects are manage
 
 .. image:: ./images/user/catalog2.png
    :align: center
-   :scale: 50%
 
 Manage Catalogs
 ---------------
@@ -154,7 +153,6 @@ Sellers can also update their catalogs. To do that, click on the name of the cat
 
 .. image:: ./images/user/catalog6.png
    :align: center
-   :scale: 50%
 
 Then, update the fields you want to modify and click on *Update*. In this view, it is possible to change the *Status* of the
 catalog. To start monetizing the catalog, and make it appear in the *Home* you have to change its status to *Launched*
