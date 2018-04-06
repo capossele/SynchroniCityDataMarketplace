@@ -487,4 +487,22 @@ Additionally, you can generate an access token for the data source accessing to 
 .. image:: ./images/user/inv10.png
    :align: center
 
+Access Acquired Data Offerings
+------------------------------
 
+To access and consume the data you have acquired, you first need to locate on the characteristic of your data source,
+the *url* pointing to that data and the *Fiware-Service* related to that data. 
+
+.. image:: ./images/user/access1.png
+   :align: center
+
+You will also need to retrieve or generate a new token as shown in the prevoius section
+
+.. image:: ./images/user/access2.png
+   :align: center
+
+Once you have these information you can use them to create your *request*. In this example we are using these information,
+specifically the *url*, the *X-Auth-Token*, and the *Fiware-Service* to build a *GET* request by using *Postman*
+
+.. image:: ./images/user/access3.png
+   :align: center
