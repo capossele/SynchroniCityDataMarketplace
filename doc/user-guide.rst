@@ -121,10 +121,10 @@ Then edit the corresponding fields and click on *Update*.
 Seller
 ======
 
-If the user of the SynchroniCity IoT Data Marketplace has the *Seller* role, he will be able to share and monetize his data sources by creating,
+If the user of the SynchroniCity IoT Data Marketplace has the *Seller* role, he will be able to share and monetize his data sources by creating
 catalogs, data source specifications and offerings. All these objects are managed accessing *My Stock* section.
 
-.. image:: ./images/user/catalog1.png
+.. image:: ./images/user/catalog2.png
    :align: center
    :scale: 50%
 
@@ -132,32 +132,17 @@ Manage Catalogs
 ---------------
 
 The *Catalogs* section is the one that is open by default when the seller accesses *My Stock* section. This section
-contains the catalogs the seller has created.
-
-.. image:: ./images/user/catalog2.png
-   :align: center
-   :scale: 50%
-
-Additionally, it has been defined several mechanisms for searching and filtering the list of catalogs displayed. On the one
+contains the catalogs the seller has created. Additionally, it has been defined several mechanisms for searching and filtering the list of catalogs displayed. On the one
 hand, it is possible to search catalogs by keyword using the search input provided in the menu bar. On the other hand,
 it is possible to specify how catalog list should be sorted or filter the shown catalogs by status and the role you are
 playing. To do that, click on *Filters*, choose the required parameters, and click on *Close*.
-
-.. image:: ./images/user/catalog8.png
-   :align: center
-   :scale: 50%
 
 .. image:: ./images/user/catalog9.png
    :align: center
    :scale: 50%
 
-To create a new catalog click on the *New* button.
-
-.. image:: ./images/user/catalog3.png
-   :align: center
-   :scale: 50%
-
-Then, provide a name and an optional description for the catalog. Once you have filled the fields, click on *Next*, and then on *Create*
+To create a new catalog click on the *New* button. Then, provide a name and an optional description for the catalog. 
+Once you have filled the fields, click on *Next*, and then on *Create*
 
 .. image:: ./images/user/catalog4.png
    :align: center
@@ -590,40 +575,6 @@ You can see the generated reports clicking on *RS Reports*
 .. note::
    Sellers would need to have a PayPal account associated to the email of their FIWARE IdM account in order to be paid for
    their products
-
-Manage Received Orders
-----------------------
-
-Sellers can manage the orders they have received in order to see the chosen characteristics and read customer notes.
-
-To view your received orders go to *My inventory* section, click on *Data orders*, and open the *Received* section.
-
-.. image:: ./images/user/provord1.png
-   :align: center
-
-.. image:: ./images/user/provord2.png
-   :align: center
-
-.. image:: ./images/user/provord3.png
-   :align: center
-
-You can view the details of a received order clicking on the order date
-
-.. image:: ./images/user/provord4.png
-   :align: center
-
-In the displayed view you can review the details of the order and the details of your data acquired by the customer,
-including the chosen characteristics.
-
-Additionally, you can view the customer notes clicking on the *Notes* tab
-
-.. image:: ./images/user/provord5.png
-   :align: center
-
-You can also give a reply to customer notes including it in the text area and clicking on the send button
-
-.. image:: ./images/user/provord6.png
-   :align: center
 
 Customer
 ========
