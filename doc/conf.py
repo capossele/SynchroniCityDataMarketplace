@@ -12,7 +12,7 @@ source_parsers = {
             '.md': CommonMarkParser,		
         }
 master_doc = 'index'
-project = u'SynchroniCity IoT Data Marketplace'
+project = 'SynchroniCity IoT Data Marketplace'
 copyright = u'2018'
 version = 'latest'
 release = 'latest'
