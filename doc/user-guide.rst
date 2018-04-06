@@ -346,24 +346,9 @@ If you choose *one time*, you have to provide the price and the currency.
 .. image:: ./images/user/offering14.png
    :align: center
 
-If you choose *recurring*, you have to provide the price, the currency, and the period between charges.
-
-.. image:: ./images/user/offering15.png
-   :align: center
-
-If you choose usage, you have to provide the unit to be accounted, the currency, and the price per unit
-
-.. image:: ./images/user/offering16.png
-   :align: center
-
-You can update or remove plans by clicking on the corresponding action button.
-
-.. image:: ./images/user/offering17.png
-   :align: center
-
 Once you have created you pricing model click on *Next*
 
-.. image:: ./images/user/offering18.png
+.. image:: ./images/user/offering17.png
    :align: center
 
 In the last step of the process, you have to choose the revenue sharing model to be applied to you offering between the
@@ -376,27 +361,14 @@ available ones. Once done, click on *Next* and then on *Create*.
    :align: center
 
 Sellers can also edit their offerings. To do that click on the offering to be updated.
-
-.. image:: ./images/user/offering21.png
-   :align: center
-   :scale: 50%
-
 In the displayed form, change the fields you want to edit and click on *Update*. Note that for start selling you offering
 you have to update its status to *Launched*
 
 .. image:: ./images/user/offering22.png
    :align: center
-   :scale: 50%
-
-It is also possible to update the *Price Plans* and *Categories* of the offering by accessing to the related tab.
-
-.. image:: ./images/user/offering23.png
-   :align: center
-   :scale: 50%
 
 .. image:: ./images/user/offering24.png
    :align: center
-   :scale: 50%
 
 
 Manage Revenue Sharing Models
