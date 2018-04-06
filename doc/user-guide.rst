@@ -162,22 +162,21 @@ catalog. To start monetizing the catalog, and make it appear in the *Home* you h
 .. image:: ./images/user/catalog7.png
    :align: center
 
+.. image:: ./images/user/catalog8.png
+   :align: center
+
 Manage Data Source Specifications
 -----------------------------
 
 Data Source Specifications represent the data source being offered. To list your data source specifications
-go to *My Stock* section and click on *Data source specifications*
+go to *My Stock* section and click on *Data source specifications*.
 
-.. image:: ./images/user/product1.png
+.. image:: ./images/user/product2.png
    :align: center
    :scale: 50%
 
 In the same way as catalogs, data source specifications can be searched by keyword, sorted, or filtered by status and whether
 they are bundles or not. To filter or sort data source specifications, click on *Filters*, choose the appropriate properties, and click on *Close*
-
-.. image:: ./images/user/product2.png
-   :align: center
-   :scale: 50%
 
 .. image:: ./images/user/product3.png
    :align: center
@@ -185,48 +184,29 @@ they are bundles or not. To filter or sort data source specifications, click on 
 
 Additionally, it is possible to switch between the grid view and the tabular view using the provided buttons.
 
-.. image:: ./images/user/product4.png
-   :align: center
-   :scale: 50%
-
 .. image:: ./images/user/product5.png
    :align: center
    :scale: 50%
 
-To create a new data source specification click on *New*
-
-.. image:: ./images/user/product6.png
-   :align: center
-   :scale: 50%
-
-In the displayed view, provide the general information of the data source spec. including its name, version, and an optional
+To create a new data source specification click on *New*. In the displayed view, provide the general information of the data source spec. including its name, version, and an optional
 description. In addition, you have to include the data source brand (Your brand), and an ID number which identifies the data source
 in your environment. Then, click on *Next*.
 
 .. image:: ./images/user/product7.png
    :align: center
 
-In the next step, you can choose whether your data source specification is a bundle or not. Data source bundles are logical containers
-that allow you to sell multiple data sources as if it were a single one. Once you have selected the right option click on *Next*
-
-.. image:: ./images/user/product8.png
-   :align: center
-
-If you have decided to create a bundle, you will be required to choose 2 or more data source specs to be included in the bundle.
-
-.. image:: ./images/user/product9.png
-   :align: center
-
 In the next step you you will be required to provide the asset.
 
 For providing the asset, you have to choose between the available asset types, choose how to provide the asset between the
-available options, provide the asset, and include its media type.
+available options, provide the asset, and include all the required information.
 
 .. image:: ./images/user/product10.png
    :align: center
 
-.. image:: ./images/user/product11.png
-   :align: center
+.. note::
+    *Application ID* has to be the same application ID of the *Orion Context Broker* instance registered on the IdM where your data source belongs.
+    *Fiware-Service* is the header used to register your data source as an entity on the *Orion Context Broker*. If your user does not have a provider 
+    role for that specific *Fiware-Service* (e.g., *TenantRZ1:provider*) you will not be allowed to publish data source specification for that entity.
 
 The next step in the creation of a data source spec. is including its characteristics. For including a new characteristic click on
 *New Characteristic*
@@ -251,17 +231,11 @@ Once you have included all the required characteristics click on *Next*
    :align: center
 
 In the next step you can include a picture for your data source spec. You have two options, providing an URL pointing to the
-picture or directly uploading it. Once provided click *Next*
+picture or directly uploading it. Once provided click *Next* 
+(Image credit for this example: `oNline Web Fonts <http://www.onlinewebfonts.com>`__ )
 
 .. image:: ./images/user/product16.png
    :align: center
-
-.. image:: ./images/user/product17.png
-   :align: center
-
-
-
-
 
 Once done click on *Next* and then on *Create*
 
@@ -281,38 +255,9 @@ you will be required to change its status to *Launched*
    :align: center
    :scale: 50%
 
-.. note::
-   For digital products it is not allowed to update the version using this form. Instead it is required to follow the
-   process for upgrading the data source version.
-
-The basic information of the data source specification is not the only information that can be updated, but it is also possible
-to update the *Attachments* and the *Relationships* by clicking of the related tab.
-
 .. image:: ./images/user/product22.png
    :align: center
    :scale: 50%
-
-.. image:: ./images/user/product23.png
-   :align: center
-   :scale: 50%
-
-The displayed details form can be used for digital products specifications in order to provide new versions of the digital assets
-being offered. This can be done by clicking on *Upgrade*.
-
-.. image:: ./images/user/product24.png
-   :align: center
-   :scale: 50%
-
-In the displayed form, it is required to include a new version for the data source specification and to provide the new digital
-asset to be offered.
-
-.. image:: ./images/user/product25.png
-   :align: center
-   :scale: 50%
-
-.. note::
-   All the customers who have acquired an offering including the current data source specification will be able to access to
-   the new version of the digital asset.
 
 Manage Data Offerings
 ------------------------
