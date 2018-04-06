@@ -262,7 +262,7 @@ you will be required to change its status to *Launched*
 Manage Data Offerings
 ------------------------
 
-Data Offerings are the entities that contain the pricing models and revenue sharing info used to monetize a data source specification.
+Data Offerings are the entities that contain the license, pricing models and revenue sharing info used to monetize a data source specification.
 To list your data offerings, go to *My Stock* section and click on *Offerings*
 
 .. image:: ./images/user/offering1.png
