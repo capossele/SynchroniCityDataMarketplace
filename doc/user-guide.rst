@@ -52,17 +52,7 @@ For users, personal information is provided.
 .. note::
    Only the *First name* and *Last name* fields are mandatory
 
-For organizations, general organization info is provided.
-
-.. image:: ./images/user/profileOrg.png
-   :align: center
-   :scale: 50%
-
 Once you have created your profile, you can include contact mediums by going to the *Contact mediums* section.
-
-.. image:: ./images/user/profile3.png
-   :align: center
-
 In the *Contact Medium* section, there are two different tabs. On the one hand, the *Billing addresses* tab, where you
 can register the billing addresses you will be able to use when creating orders and purchasing data.
 
@@ -81,12 +71,7 @@ wanted fields.
    :align: center
 
 On the other hand, if you have the *Seller* role you can create *Business Addresses*, which can be used by your customers
-in order to allow them to contact you.
-
-.. image:: ./images/user/profile7.png
-   :align: center
-
-In the *Business Addresses* tab you can create, different kind of contact mediums, including emails, phones, and addresses.
+in order to allow them to contact you. In the *Business Addresses* tab you can create, different kind of contact mediums, including emails, phones, and addresses.
 To create a contact medium, fill in the fields and click on *Create*
 
 .. image:: ./images/user/profile8.png
