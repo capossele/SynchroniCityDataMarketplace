@@ -5,21 +5,19 @@ User Guide
 Introduction
 ============
 
-This user guide covers the Business API Ecosystem version 6.4.0, corresponding to FIWARE release 6.
+This user guide covers the SynchroniCity IoT Data Marketplace based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__ version 6.4.0, corresponding to FIWARE release 6.
 Any feedback on this document is highly welcomed, including bugs, typos or things you think should be included but aren't.
-Please send them to the "Contact Person" email that appears in the `Catalogue page for this GEi`_. Or create an issue at `GitHub Issues`_
+Please send them by creating an issue at `GitHub Issues`_
 
-.. _Catalogue page for this GEi: https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri
-.. _GitHub Issues: https://github.com/FIWARE-TMForum/Business-API-Ecosystem/issues/new
+.. _GitHub Issues: https://github.com/caposseleDigicat/SynchroniCityDataMarketplace/issues/new
 
-
-This user guide contains a description of the different tasks that can be performed in the Business API Ecosystem using
-its web interface. This section is organized so the actions related to a particular user role are grouped together.
+This user guide contains a description of the different tasks that can be performed in the SynchroniCity IoT Data Marketplace using
+its web interface. This section is organized so that actions related to a particular user role are grouped together.
 
 Using Organizations
 ===================
 
-Starting on version 6.4.0, the Business API Ecosystem supports organizations as defined by the FIWARE IdM. These organizations
+The SynchroniCity IoT Data Marketplace supports organizations as defined by the FIWARE IdM. These organizations
 can use the system as if they were users, being possible to create organizations catalogs and offerings or acquire them.
 
 To use the platform on behalf an organization the user belongs, it is needed to change the platform context. To do that,
@@ -65,10 +63,10 @@ Once you have created your profile, you can include contact mediums by going to 
 .. image:: ./images/user/profile3.png
    :align: center
 
-In the *Contact Medium* section, there are two different tabs. On the one hand, the *Shipping addresses* tab, where you
-can register the shipping addresses you will be able to use when creating orders and purchasing products.
+In the *Contact Medium* section, there are two different tabs. On the one hand, the *Billing addresses* tab, where you
+can register the billing addresses you will be able to use when creating orders and purchasing data.
 
-To create a shipping address, fill in the fields and click on *Create*
+To create a blling address, fill in the fields and click on *Create*
 
 .. image:: ./images/user/profile4.png
    :align: center
@@ -108,7 +106,7 @@ You can *Edit* or *Remove* the contact medium by clicking on the corresponding b
 Admin
 =====
 
-If the user of the Business API Ecosystem is an admin, he will be able to access the *Administration* section of the
+If the user of the SynchroniCity IoT Data Marketplace is an admin, he will be able to access the *Administration* section of the
 web portal. This section is located in the user menu.
 
 .. image:: ./images/user/cat1.png
@@ -133,7 +131,7 @@ Then, provide a name and an optional description for the category. Once the info
 .. image:: ./images/user/cat4.png
    :align: center
 
-Categories in the Business API Ecosystem can be nested, so you can choose a parent category if you want while creating.
+Categories in the SynchroniCity IoT Data Marketplace can be nested, so you can choose a parent category if you want while creating.
 
 .. image:: ./images/user/cat5.png
    :align: center
@@ -151,8 +149,8 @@ Then edit the corresponding fields and click on *Update*.
 Seller
 ======
 
-If the user of the Business API Ecosystem has the *Seller* role, he will be able to monetize his products by creating,
-catalogs, product specifications and product offerings. All these objects are managed accessing *My Stock* section.
+If the user of the SynchroniCity IoT Data Marketplace has the *Seller* role, he will be able to share and monetize his data sources by creating,
+catalogs, data source specifications and offerings. All these objects are managed accessing *My Stock* section.
 
 .. image:: ./images/user/catalog1.png
    :align: center
