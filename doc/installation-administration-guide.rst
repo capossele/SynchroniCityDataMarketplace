@@ -339,11 +339,11 @@ To Check if the SynchroniCity IoT Data Marketplace is running, follow the next s
 .. image:: ./images/installation/sanity8.png
 .. image:: ./images/installation/sanity9.png
 
-9. Click on *Launched*, and then click on *Update*
+8. Click on *Launched*, and then click on *Update*
 
 .. image:: ./images/installation/sanity11.png
 
-10. Go to *Home*, and ensure the new catalog appears
+9. Go to *Home*, and ensure the new catalog appears
 
 .. image:: ./images/installation/sanity13.png
 
