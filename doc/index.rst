@@ -30,12 +30,6 @@ Index
 :doc:`user-guide`
   The guide for users that explains how to use it.
 
-:doc:`programmer-guide`
-  The guide for programmers that explains how to develop plugins
-
-:doc:`plugins-guide`
-  The guide for admins that cover the available plugins
-
 .. _documentation:
 
 .. toctree::
@@ -44,5 +38,3 @@ Index
 
     installation-administration-guide
     user-guide
-    programmer-guide
-    plugins-guide
