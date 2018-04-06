@@ -258,16 +258,11 @@ Manage Data Offerings
 Data Offerings are the entities that contain the license, pricing models and revenue sharing info used to monetize a data source specification.
 To list your data offerings, go to *My Stock* section and click on *Offerings*
 
-.. image:: ./images/user/offering1.png
+.. image:: ./images/user/offering2.png
    :align: center
-   :scale: 50%
 
 The existing data source offerings can be searched by keyword, sorted, or filtered by status and whether they are bundles or not.
 To filter or sort data offerings, click on *Filters*, choose the appropriate properties, and click on *Close*
-
-.. image:: ./images/user/offering2.png
-   :align: center
-   :scale: 50%
 
 .. image:: ./images/user/offering3.png
    :align: center
@@ -275,33 +270,17 @@ To filter or sort data offerings, click on *Filters*, choose the appropriate pro
 
 Additionally, it is possible to switch between the grid view and the tabular view by clicking on the specific button.
 
-.. image:: ./images/user/offering4.png
-   :align: center
-   :scale: 50%
-
 .. image:: ./images/user/offering5.png
    :align: center
-   :scale: 50%
 
-To create a new offering click on *New*
-
-.. image:: ./images/user/offering6.png
-   :align: center
-   :scale: 50%
-
-In the displayed form, include the basic info of the offering. Including, its name, version, an optional description, and
+To create a new offering click on *New*. In the displayed form, include the basic info of the offering. Including, its name, version, an optional description, and
 an optional set of places where the offering is available. Once the information has been provided click on *Next*
 
 .. image:: ./images/user/offering7.png
    :align: center
 
 In the next step, you can choose whether your offering is a bundle or not. In this case, offering bundles are logical
-containers that allow you to provide new pricing models when a set of offerings are acquired together. Once selected click
-on *Next*
-
-.. image:: ./images/user/offering8.png
-   :align: center
-
+containers that allow you to provide new pricing models when a set of offerings are acquired together. 
 If you want to create a bundle you will be required to include at least two bundled offerings.
 
 .. image:: ./images/user/offering9.png
@@ -312,9 +291,6 @@ selected click on *Next*.
 
 .. image:: ./images/user/offering10.png
    :align: center
-
-.. note::
-   If you are creating an offering bundle, you will not be allowed to include a data source specification
 
 Then, you have to select the catalog where you want to publish you offering and click on *Next*
 
@@ -327,13 +303,29 @@ In the next step, you can optionally choose categories for you offering. Once do
    :align: center
 
 In the next step, you can specify the terms and conditions that apply to your offering and that must be accepted by those
-customers who want to acquire it. To do that, include a title and a text for your terms and click on *Next*. Note that
-the terms and conditions are not mandatory.
+customers who want to acquire it. Note that the terms and conditions are not mandatory.
 
-.. image:: ./images/user/product19.png
+.. image:: ./images/user/product25.png
    :align: center
 
-The next step is the more important for the offering. In the displayed form you can create different price plans for
+You have 3 options. You can select a standard open data license among the ones available
+
+.. image:: ./images/user/product25.png
+   :align: center
+
+Or you can customize your licese by using the wizard menu 
+
+.. image:: ./images/user/product25.png
+   :align: center
+
+Or you can describe your license by using the free-text form
+
+.. image:: ./images/user/product25.png
+   :align: center
+
+Once you have defined your license click on *Next*
+
+The next step is the most important for the offering. In the displayed form you can create different price plans for
 you offering, which will be selectable by customers when acquiring the offering. If you do not include any price plan
 the offering in considered free.
 
