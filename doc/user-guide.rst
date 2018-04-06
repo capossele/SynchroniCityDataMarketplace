@@ -88,7 +88,7 @@ Manage Categories
 -----------------
 
 Admin users are authorized to create the system categories that can be used by *Sellers* to categorize their catalogs,
-products, and offerings.
+data sources, and offerings.
 
 To create categories, go to the *Administration* section, and click on *New*
 
