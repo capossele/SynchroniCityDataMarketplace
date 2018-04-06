@@ -173,20 +173,17 @@ go to *My Stock* section and click on *Data source specifications*.
 
 .. image:: ./images/user/product2.png
    :align: center
-   :scale: 50%
 
 In the same way as catalogs, data source specifications can be searched by keyword, sorted, or filtered by status and whether
 they are bundles or not. To filter or sort data source specifications, click on *Filters*, choose the appropriate properties, and click on *Close*
 
 .. image:: ./images/user/product3.png
    :align: center
-   :scale: 50%
 
 Additionally, it is possible to switch between the grid view and the tabular view using the provided buttons.
 
 .. image:: ./images/user/product5.png
    :align: center
-   :scale: 50%
 
 To create a new data source specification click on *New*. In the displayed view, provide the general information of the data source spec. including its name, version, and an optional
 description. In addition, you have to include the data source brand (Your brand), and an ID number which identifies the data source
@@ -246,18 +243,15 @@ Sellers can update their data source. To do that click on the data source specif
 
 .. image:: ./images/user/product20.png
    :align: center
-   :scale: 50%
 
 Update the required values and click on *Update*. Note that for start selling an offering that includes the data source specification
 you will be required to change its status to *Launched*
 
 .. image:: ./images/user/product21.png
    :align: center
-   :scale: 50%
 
 .. image:: ./images/user/product22.png
    :align: center
-   :scale: 50%
 
 Manage Data Offerings
 ------------------------
