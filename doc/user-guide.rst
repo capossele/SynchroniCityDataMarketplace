@@ -313,7 +313,7 @@ You have 3 options. You can select a standard open data license among the ones a
 .. image:: ./images/user/offering26.png
    :align: center
 
-Or you can customize your licese by using the wizard menu 
+Or you can customize your license by using the wizard menu 
 
 .. image:: ./images/user/offering27.png
    :align: center
