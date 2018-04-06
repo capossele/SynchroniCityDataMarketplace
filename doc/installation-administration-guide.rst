@@ -6,11 +6,10 @@ Installation and Administration Guide
 Introduction
 ------------
 
-This installation and administration guide covers the SynchroniCity IoT Data Marketplace version 6.4.0 based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__, corresponding to FIWARE release 6.
+This installation and administration guide covers the SynchroniCity IoT Data Marketplace based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__ version 6.4.0, corresponding to FIWARE release 6.
 Any feedback on this document is highly welcomed, including bugs, typos or things you think should be included but aren't.
 Please send them by creating an issue at `GitHub Issues`_
 
-.. _Business API Ecosystem: 
 .. _GitHub Issues: https://github.com/caposseleDigicat/SynchroniCityDataMarketplace/issues/new
 
 ------------

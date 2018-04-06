@@ -2,7 +2,7 @@
 Overview
 ========
 
-This project is part of the EU H2020 `SynchroniCity <https://www.fiware.org>`__ project and it is based on the `FIWARE Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__.
+This project is part of the EU H2020 `SynchroniCity <https://synchronicity-iot.eu>`__ project and it is based on the `FIWARE Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__.
 
 The SynchroniCity IoT Data Marketplace is a joint component made up of the FIWARE Business Framework and a set of APIs (and its
 reference implementations) provided by the TMForum. This component allows the monetization of different kind of assets
