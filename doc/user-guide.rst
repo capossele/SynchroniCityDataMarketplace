@@ -484,7 +484,7 @@ Additionally, you can generate an access token for the data source accessing to 
 .. image:: ./images/user/inv9.png
    :align: center
 
-.. image:: ./images/user/in10.png
+.. image:: ./images/user/inv10.png
    :align: center
 
 
