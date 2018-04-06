@@ -12,7 +12,7 @@ source_parsers = {
             '.md': CommonMarkParser,		
         }
 master_doc = 'index'
-project = 'SynchroniCity IoT Data Marketplace'
+project = u'SynchroniCity IoT Data Marketplace'
 copyright = u'2018'
 version = 'latest'
 release = 'latest'
@@ -31,12 +31,13 @@ if not on_rtd:
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-    html_style = 'https://www.fiware.org/style/fiware_readthedocs.css'
+    #html_style = 'https://www.fiware.org/style/fiware_readthedocs.css'
 else:
     html_context = { 
         'css_files': [
             'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
-            'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-            'https://www.fiware.org/style/fiware_readthedocs.css',
-        ],  
+            'https://media.readthedocs.org/css/readthedocs-doc-embed.css'
+        ]
     }
+
+#'https://www.fiware.org/style/fiware_readthedocs.css',
