@@ -205,18 +205,18 @@ catalog. To start monetizing the catalog, and make it appear in the *Home* you h
 .. image:: ./images/user/catalog7.png
    :align: center
 
-Manage Product Specifications
+Manage Data Source Specifications
 -----------------------------
 
-Product Specifications represent the product being offered, both digital and physical. To list your product specifications
-go to *My Stock* section and click on *Product Specifications*
+Data Source Specifications represent the data source being offered. To list your data source specifications
+go to *My Stock* section and click on *Data source specifications*
 
 .. image:: ./images/user/product1.png
    :align: center
    :scale: 50%
 
-In the same way as catalogs, product specifications can be searched by keyword, sorted, or filtered by status and whether
-they are bundles or not. To filter or sort product specifications, click on *Filters*, choose the appropriate properties, and click on *Close*
+In the same way as catalogs, data source specifications can be searched by keyword, sorted, or filtered by status and whether
+they are bundles or not. To filter or sort data source specifications, click on *Filters*, choose the appropriate properties, and click on *Close*
 
 .. image:: ./images/user/product2.png
    :align: center
@@ -236,36 +236,31 @@ Additionally, it is possible to switch between the grid view and the tabular vie
    :align: center
    :scale: 50%
 
-To create a new product specification click on *New*
+To create a new data source specification click on *New*
 
 .. image:: ./images/user/product6.png
    :align: center
    :scale: 50%
 
-In the displayed view, provide the general information of the product spec. including its name, version, and an optional
-description. In addition, you have to include the product brand (Your brand), and an ID number which identifies the product
+In the displayed view, provide the general information of the data source spec. including its name, version, and an optional
+description. In addition, you have to include the data source brand (Your brand), and an ID number which identifies the data source
 in your environment. Then, click on *Next*.
 
 .. image:: ./images/user/product7.png
    :align: center
 
-In the next step, you can choose whether your product specification is a bundle or not. Product bundles are logical containers
-that allow you to sell multiple products as if it were a single one. Once you have selected the right option click on *Next*
+In the next step, you can choose whether your data source specification is a bundle or not. Data source bundles are logical containers
+that allow you to sell multiple data sources as if it were a single one. Once you have selected the right option click on *Next*
 
 .. image:: ./images/user/product8.png
    :align: center
 
-If you have decided to create a bundle, you will be required to choose 2 or more product specs to be included in the bundle.
+If you have decided to create a bundle, you will be required to choose 2 or more data source specs to be included in the bundle.
 
 .. image:: ./images/user/product9.png
    :align: center
 
-In the next step you can choose if your product is a digital product. If this is the case, you will be required to provide
-the asset.
-
-.. note::
-   If you are creating a product bundle, you will not be allowed to provide a digital asset since the offered ones will
-   be the included in the bundled products
+In the next step you you will be required to provide the asset.
 
 For providing the asset, you have to choose between the available asset types, choose how to provide the asset between the
 available options, provide the asset, and include its media type.
@@ -276,7 +271,7 @@ available options, provide the asset, and include its media type.
 .. image:: ./images/user/product11.png
    :align: center
 
-The next step in the creation of a product is including its characteristics. For including a new characteristic click on
+The next step in the creation of a data source spec. is including its characteristics. For including a new characteristic click on
 *New Characteristic*
 
 .. image:: ./images/user/product12.png
@@ -298,7 +293,7 @@ Once you have included all the required characteristics click on *Next*
 .. image:: ./images/user/product15.png
    :align: center
 
-In the next step you can include a picture for your product spec. You have two options, providing an URL pointing to the
+In the next step you can include a picture for your data source spec. You have two options, providing an URL pointing to the
 picture or directly uploading it. Once provided click *Next*
 
 .. image:: ./images/user/product16.png
@@ -307,30 +302,22 @@ picture or directly uploading it. Once provided click *Next*
 .. image:: ./images/user/product17.png
    :align: center
 
-Then, you can specify relationships of the product you are creating with other of your product specs.
 
-.. image:: ./images/user/product18.png
-   :align: center
 
-In the last step, you can specify the terms and conditions that apply to your product and that must be accepted by those
-customers who want to acquire it. To do that, include a title and a text for your terms and click on *Next*. Note that
-the terms and conditions are not mandatory.
 
-.. image:: ./images/user/product19.png
-   :align: center
 
 Once done click on *Next* and then on *Create*
 
 .. image:: ./images/user/product19b.png
    :align: center
 
-Sellers can update their products. To do that click on the product specification to be updated.
+Sellers can update their data source. To do that click on the data source specification to be updated.
 
 .. image:: ./images/user/product20.png
    :align: center
    :scale: 50%
 
-Update the required values and click on *Update*. Note that for start selling an offering that includes the product specification
+Update the required values and click on *Update*. Note that for start selling an offering that includes the data source specification
 you will be required to change its status to *Launched*
 
 .. image:: ./images/user/product21.png
@@ -339,9 +326,9 @@ you will be required to change its status to *Launched*
 
 .. note::
    For digital products it is not allowed to update the version using this form. Instead it is required to follow the
-   process for upgrading the product version.
+   process for upgrading the data source version.
 
-The basic information of the product specification is not the only information that can be updated, but it is also possible
+The basic information of the data source specification is not the only information that can be updated, but it is also possible
 to update the *Attachments* and the *Relationships* by clicking of the related tab.
 
 .. image:: ./images/user/product22.png
@@ -359,7 +346,7 @@ being offered. This can be done by clicking on *Upgrade*.
    :align: center
    :scale: 50%
 
-In the displayed form, it is required to include a new version for the product specification and to provide the new digital
+In the displayed form, it is required to include a new version for the data source specification and to provide the new digital
 asset to be offered.
 
 .. image:: ./images/user/product25.png
@@ -367,21 +354,21 @@ asset to be offered.
    :scale: 50%
 
 .. note::
-   All the customers who have acquired an offering including the current product specification will be able to access to
+   All the customers who have acquired an offering including the current data source specification will be able to access to
    the new version of the digital asset.
 
-Manage Product Offerings
+Manage Data Offerings
 ------------------------
 
-Product Offerings are the entities that contain the pricing models and revenue sharing info used to monetize a product specification.
-To list your product offerings, go to *My Stock* section and click on *Offerings*
+Data Offerings are the entities that contain the pricing models and revenue sharing info used to monetize a data source specification.
+To list your data offerings, go to *My Stock* section and click on *Offerings*
 
 .. image:: ./images/user/offering1.png
    :align: center
    :scale: 50%
 
-The existing product offerings can be searched by keyword, sorted, or filtered by status and whether they are bundles or not.
-To filter or sort product offerings, click on *Filters*, choose the appropriate properties, and click on *Close*
+The existing data source offerings can be searched by keyword, sorted, or filtered by status and whether they are bundles or not.
+To filter or sort data offerings, click on *Filters*, choose the appropriate properties, and click on *Close*
 
 .. image:: ./images/user/offering2.png
    :align: center
@@ -425,14 +412,14 @@ If you want to create a bundle you will be required to include at least two bund
 .. image:: ./images/user/offering9.png
    :align: center
 
-In the next step you have to select the product specification that is going to be monetized in the current offering. Once
+In the next step you have to select the data source specification that is going to be monetized in the current offering. Once
 selected click on *Next*.
 
 .. image:: ./images/user/offering10.png
    :align: center
 
 .. note::
-   If you are creating an offering bundle, you will not be allowed to include a product specification
+   If you are creating an offering bundle, you will not be allowed to include a data source specification
 
 Then, you have to select the catalog where you want to publish you offering and click on *Next*
 
@@ -442,6 +429,13 @@ Then, you have to select the catalog where you want to publish you offering and 
 In the next step, you can optionally choose categories for you offering. Once done, click on *Next*
 
 .. image:: ./images/user/offering12.png
+   :align: center
+
+In the next step, you can specify the terms and conditions that apply to your offering and that must be accepted by those
+customers who want to acquire it. To do that, include a title and a text for your terms and click on *Next*. Note that
+the terms and conditions are not mandatory.
+
+.. image:: ./images/user/product19.png
    :align: center
 
 The next step is the more important for the offering. In the displayed form you can create different price plans for
@@ -628,10 +622,9 @@ You can see the generated reports clicking on *RS Reports*
 Manage Received Orders
 ----------------------
 
-Sellers can manage the orders they have received in order to see the chosen characteristics, read customer notes, or
-process the order in case it has been acquired a physical product.
+Sellers can manage the orders they have received in order to see the chosen characteristics and read customer notes.
 
-To view your received orders go to *My inventory* section, click on *Product orders*, and open the *Received* section.
+To view your received orders go to *My inventory* section, click on *Data orders*, and open the *Received* section.
 
 .. image:: ./images/user/provord1.png
    :align: center
@@ -647,7 +640,7 @@ You can view the details of a received order clicking on the order date
 .. image:: ./images/user/provord4.png
    :align: center
 
-In the displayed view you can review the details of the order and the details of your products acquired by the customer,
+In the displayed view you can review the details of the order and the details of your data acquired by the customer,
 including the chosen characteristics.
 
 Additionally, you can view the customer notes clicking on the *Notes* tab
@@ -660,35 +653,6 @@ You can also give a reply to customer notes including it in the text area and cl
 .. image:: ./images/user/provord6.png
    :align: center
 
-If the acquired product is not digital, the order needs to be processed manually by the seller, in the sense that the
-seller will have to send the acquired product to the customer. To deal with this situation, the order details view allows
-sellers to manually change the status of the order.
-
-To reject a received order you have to click in the *Reject* button located in the search or in the details view of the order.
-
-.. image:: ./images/user/provord7.png
-   :align: center
-
-.. image:: ./images/user/provord8.png
-   :align: center
-
-In case you accept the order and send the product to the customer, you have to put it as *inProgress* clicking on the *Sent* button
-
-.. image:: ./images/user/provord9.png
-   :align: center
-
-.. image:: ./images/user/provord10.png
-   :align: center
-
-Finally, when the product arrives at its destination, you have to put it as *Completed* clicking on the *Delivered* button
-
-.. image:: ./images/user/provord11.png
-   :align: center
-
-.. image:: ./images/user/provord12.png
-   :align: center
-
-
 Customer
 ========
 
@@ -698,7 +662,7 @@ offerings.
 List Available Offerings
 ------------------------
 
-All the available (*Launched*) offerings appear in the *Home* page of the Business API Ecosystem, so they can be seen by
+All the available (*Launched*) offerings appear in the *Home* page of the SynchroniCity IoT Data Marketplace, so they can be seen by
 customers.
 
 .. image:: ./images/user/search1.png
@@ -743,8 +707,8 @@ Customers can open the details of an offering by clicking on it
    :align: center
    :scale: 50%
 
-In the displayed view, it is shown the general info about the offering and its included product, the characteristics of
-the product, the price plans of the offering, and the existing relationships.
+In the displayed view, it is shown the general info about the offering and its included data source, the characteristics of
+the data source, and the price plans of the offering.
 
 .. image:: ./images/user/search8.png
    :align: center
@@ -803,17 +767,16 @@ Once you have included all the offerings you want to acquire to the shopping car
    :align: center
    :scale: 50%
 
-In the displayed form, you can include an optional name, an optional description, or an optional note. Notes can include
-any additional information you want to provide to the sellers of the acquired offerings.
 
-Then, you have to choose a priority for your order, and select one of your shipping addresses.
+
+Then, you have to select one of your billing addresses.
 
 Once you have provided all the required information you can start the order creation clicking on *Checkout*
 
 .. image:: ./images/user/order7.png
    :align: center
 
-In the next step, you will be redirected to *PayPal* so you can pay for the offerings according to their pricing models
+If the offering has a price plan, you will be redirected to *PayPal* so you can pay for the offerings according to their pricing models
 
 .. image:: ./images/user/order8.png
    :align: center
@@ -826,13 +789,12 @@ Finally, you will see a confirmation page
 Manage Acquired Products
 ------------------------
 
-The products you have acquired are located in *My Inventory*, there you can list them, check their status, or download
-different assets.
+The data you have acquired are located in *My Inventory*, there you can list them, check their status, or retrieve the access token required to access them.
 
 .. image:: ./images/user/inv1.png
    :align: center
 
-In this view, it is possible to filter you products by its status. To do that click on *Filters*, select the related statuses,
+In this view, it is possible to filter you data by its status. To do that click on *Filters*, select the related statuses,
 and click on *Close*
 
 .. image:: ./images/user/inv2.png
@@ -849,12 +811,12 @@ It is also possible to switch between the grid and tabular views using the relat
 .. image:: ./images/user/inv5.png
    :align: center
 
-You can manage a specific acquired product clicking on it
+You can manage a specific acquired data source clicking on it
 
 .. image:: ./images/user/inv6.png
    :align: center
 
-In the displayed view, you can see the general info of the acquired product, and the characteristics and pricing you have selected.
+In the displayed view, you can see the general info of the acquired data source, and the characteristics and pricing you have selected.
 
 .. image:: ./images/user/inv7.png
    :align: center
@@ -865,7 +827,7 @@ In the displayed view, you can see the general info of the acquired product, and
 .. image:: ./images/user/inv9.png
    :align: center
 
-Additionally, you can see your charges related to the product accessing to the *Charges* tab
+Additionally, you can see your charges related to the data source accessing to the *Charges* tab
 
 .. image:: ./images/user/inv10.png
    :align: center
@@ -876,62 +838,28 @@ clicking on *Download Invoice*
 .. image:: ./images/user/inv11.png
    :align: center
 
-Moreover, this product view allows to download the related assets when the product is digital. To do that click on *Download*
+Moreover, this data source view allows to retrieve the related access token. To do that click on *Access*
 
 .. image:: ./images/user/inv12.png
    :align: center
 
-In case the chosen pricing model defines a recurring payment or a usage payment, you will be able to renew your product
+To generate a new access token insert your IdM password and press the *Generate* button.
+
+.. image:: ./images/user/token.png
+   :align: center
+
+In case the chosen pricing model defines a recurring payment or a usage payment, you will be able to renew your data source
 clicking on *Renew*. After clicking, you will be redirected to PayPal to pay the related amount.
 
 .. image:: ./images/user/inv13.png
    :align: center
 
 .. note::
-   If you product has expired and you do not renew it, it will be suspended, which means you will not have access to the
+   If your data source has expired and you do not renew it, it will be suspended, which means you will not have access to the
    acquired service until you pay
 
-If the acquired product has a usage based price plan, you will be able to see your current consumption accessing the *Usage* tab
+If the acquired data source has a usage based price plan, you will be able to see your current consumption accessing the *Usage* tab
 
 .. image:: ./images/user/inv14.png
    :align: center
 
-Manage Requested Orders
------------------------
-
-Customers can manage some aspects of the orders they have created. To see your requested orders, go to *My Inventory* and
-click on *Product Orders*
-
-.. image:: ./images/user/custord1.png
-   :align: center
-
-In the displayed view, you can see the orders you have created, which can be filtered by its status. To do that, click on
-*Filters*, select the wanted statuses, and click on *Close*
-
-.. image:: ./images/user/custord2.png
-   :align: center
-
-.. image:: ./images/user/custord3.png
-   :align: center
-
-For those orders that include offerings of non digital products, you will be able to cancel them if the seller has not yet started
-the process. To do that, locate the order to be canceled and click on *Cancel*
-
-.. image:: ./images/user/custord4.png
-   :align: center
-
-Moreover, you can review the details of the order. To do that click on the date of the order.
-
-.. image:: ./images/user/custord5.png
-   :align: center
-
-In the displayed view, you can see all the details of the order, as well as the included products. In addition, you can
-leave a note for the seller in the *Notes* tab
-
-.. image:: ./images/user/custord6.png
-   :align: center
-
-To leave a note, write it in the provided text area and click on the send button
-
-.. image:: ./images/user/custord7.png
-   :align: center
