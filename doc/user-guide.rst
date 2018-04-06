@@ -5,7 +5,7 @@ User Guide
 Introduction
 ============
 
-This user guide covers the SynchroniCity IoT Data Marketplace based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__ version 6.4.0, corresponding to FIWARE release 6.
+This user guide covers the `SynchroniCity IoT Data Marketplace <https://github.com/caposseleDigicat/SynchroniCityDataMarketplace>`__ based on the `Business API Ecosystem <https://catalogue.fiware.org/enablers/business-api-ecosystem-biz-ecosystem-ri>`__ version 6.4.0, corresponding to FIWARE release 6.
 Any feedback on this document is highly welcomed, including bugs, typos or things you think should be included but aren't.
 Please send them by creating an issue at `GitHub Issues`_
 
@@ -13,19 +13,6 @@ Please send them by creating an issue at `GitHub Issues`_
 
 This user guide contains a description of the different tasks that can be performed in the SynchroniCity IoT Data Marketplace using
 its web interface. This section is organized so that actions related to a particular user role are grouped together.
-
-Using Organizations
-===================
-
-The SynchroniCity IoT Data Marketplace supports organizations as defined by the FIWARE IdM. These organizations
-can use the system as if they were users, being possible to create organizations catalogs and offerings or acquire them.
-
-To use the platform on behalf an organization the user belongs, it is needed to change the platform context. To do that,
-it is used the *Switch Session* option of the user menu.
-
-.. image:: ./images/user/org.png
-   :align: center
-   :scale: 50%
 
 Profile Configuration
 =====================
