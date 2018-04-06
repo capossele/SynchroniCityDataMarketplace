@@ -179,6 +179,7 @@ they are bundles or not. To filter or sort data source specifications, click on 
 
 .. image:: ./images/user/product3.png
    :align: center
+   :scale: 50%
 
 Additionally, it is possible to switch between the grid view and the tabular view using the provided buttons.
 
