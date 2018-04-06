@@ -305,22 +305,22 @@ In the next step, you can optionally choose categories for you offering. Once do
 In the next step, you can specify the terms and conditions that apply to your offering and that must be accepted by those
 customers who want to acquire it. Note that the terms and conditions are not mandatory.
 
-.. image:: ./images/user/product25.png
+.. image:: ./images/user/offering25.png
    :align: center
 
 You have 3 options. You can select a standard open data license among the ones available
 
-.. image:: ./images/user/product26.png
+.. image:: ./images/user/offering26.png
    :align: center
 
 Or you can customize your licese by using the wizard menu 
 
-.. image:: ./images/user/product27.png
+.. image:: ./images/user/offering27.png
    :align: center
 
 Or you can describe your license by using the free-text form
 
-.. image:: ./images/user/product28.png
+.. image:: ./images/user/offering28.png
    :align: center
 
 Once you have defined your license click on *Next*
