@@ -381,64 +381,30 @@ List Available Offerings
 ------------------------
 
 All the available (*Launched*) offerings appear in the *Home* page of the SynchroniCity IoT Data Marketplace, so they can be seen by
-customers.
-
-.. image:: ./images/user/search1.png
-   :align: center
-   :scale: 50%
-
-Additionally, customers can select a specific catalog of offerings by clicking on it.
+customers. Additionally, customers can select a specific catalog of offerings by clicking on it.
 
 .. image:: ./images/user/search2.png
    :align: center
-   :scale: 50%
 
 .. image:: ./images/user/search3.png
    :align: center
-   :scale: 50%
 
 Moreover, customers can filter the shown offerings by category using the categories dropdown and choosing the wanted one.
 
 .. image:: ./images/user/search4.png
    :align: center
-   :scale: 50%
 
 Customers can also filter bundle or single offerings using the *Filters* modal as well as choosing its sorting.
-
-.. image:: ./images/user/search5.png
-   :align: center
-   :scale: 50%
 
 .. image:: ./images/user/search6.png
    :align: center
    :scale: 50%
 
-Finally, customers can search offerings by keyword using the provided search bar
-
-.. image:: ./images/user/search6b.png
-   :align: center
-   :scale: 50%
-
-Customers can open the details of an offering by clicking on it
-
-.. image:: ./images/user/search7.png
-   :align: center
-   :scale: 50%
-
-In the displayed view, it is shown the general info about the offering and its included data source, the characteristics of
-the data source, and the price plans of the offering.
+Customers can open the details of an offering by clicking on it. In the displayed view, it is shown the general info about 
+the offering and its included data source, the characteristics of the data source, and the price plans of the offering.
 
 .. image:: ./images/user/search8.png
    :align: center
-   :scale: 50%
-
-.. image:: ./images/user/search9.png
-   :align: center
-   :scale: 50%
-
-.. image:: ./images/user/search10.png
-   :align: center
-   :scale: 50%
 
 Create Order
 ------------
@@ -468,24 +434,12 @@ your preferred options
    :align: center
    :scale: 50%
 
-.. image:: ./images/user/order4b.png
-   :align: center
-   :scale: 50%
-
-Once you have selected your preferences for the offering click on *Add to Cart*
+Once you have included all the offerings you want to acquire to the shopping cart, you can create the order clicking on
+*Shopping Cart*, and then on *Checkout*
 
 .. image:: ./images/user/order5.png
    :align: center
    :scale: 50%
-
-Once you have included all the offerings you want to acquire to the shopping cart, you can create the order clicking on
-*Shopping Cart*, and then on *Checkout*
-
-.. image:: ./images/user/order6.png
-   :align: center
-   :scale: 50%
-
-
 
 Then, you have to select one of your billing addresses.
 
@@ -499,13 +453,8 @@ If the offering has a price plan, you will be redirected to *PayPal* so you can 
 .. image:: ./images/user/order8.png
    :align: center
 
-Finally, you will see a confirmation page
-
-.. image:: ./images/user/order9.png
-   :align: center
-
-Manage Acquired Products
-------------------------
+Manage Acquired Data Offerings
+------------------------------
 
 The data you have acquired are located in *My Inventory*, there you can list them, check their status, or retrieve the access token required to access them.
 
