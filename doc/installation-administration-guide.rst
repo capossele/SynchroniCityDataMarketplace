@@ -293,7 +293,7 @@ as follows ::
 
 
 .. note::
-    For specific details on how to create a plugin and its internal structure, have a look at the SynchroniCity IoT Data Marketplace Programmer Guide
+    For specific details on how to create a plugin and its internal structure, have a look at the `Business API Ecosystem Programmer Guide <http://business-api-ecosystem.readthedocs.io/en/v6.4.0/programmer-guide.html>`__
 
 -----------------------
 Sanity Check Procedures
