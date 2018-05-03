@@ -11,7 +11,7 @@ services:
             - ./mongo-data:/data/db
 
     mysql:
-        image: mysql:latest
+        image: mysql:5.7
         restart: always
         ports:
             - 3333:3306
