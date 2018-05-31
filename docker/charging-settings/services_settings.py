@@ -23,7 +23,3 @@ KEYSTONE_PORT = '5000'
 KEYSTONE_USER = ''
 KEYSTONE_PWD = ''
 ADMIN_DOMAIN = ''
-
-# APP SETTINGS (e.g., Orion context broker)
-APP_CLIENT_ID = ''
-APP_CLIENT_SECRET = ''
