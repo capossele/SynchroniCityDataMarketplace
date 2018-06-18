@@ -491,18 +491,47 @@ Access Acquired Data Offerings
 ------------------------------
 
 To access and consume the data you have acquired, you first need to locate on the characteristic of your data source,
-the *url* pointing to that data and the *Fiware-Service* related to that data. 
+the *url* pointing to that data and the *Fiware-Service*, if available, related to that data. 
 
 .. image:: ./images/user/access1.png
    :align: center
 
-You will also need to retrieve or generate a new token as shown in the prevoius section
+You will also need to retrieve or generate a new token as shown in the prevoius section.
 
 .. image:: ./images/user/access2.png
    :align: center
 
 Once you have these information you can use them to create your *request*. In this example we are using these information,
-specifically the *url*, the *X-Auth-Token*, and the *Fiware-Service* to build a *GET* request by using *Postman*
+specifically the *url*, the *X-Auth-Token*, and the *Fiware-Service* to build a *GET* request by using *Postman*. Note that the 
+*Fiware-Service* might be optional if not present in the characteristic of your data source.
 
 .. image:: ./images/user/access3.png
+   :align: center
+
+To generate a new access token without accessing to the marketplace you can use the *Refresh Token*
+
+.. image:: ./images/user/access4.png
+   :align: center
+
+You will also need to retrieve the *appId* related to the data source that you wish to access. You can find the *appId* on the characteristic of your data source
+
+.. image:: ./images/user/access5.png
+   :align: center
+
+Once you have these information you can use them to generate a new access token by performing a *POST* request on this API: 
+
+```
+http://[marketplace_url]:[marketplace_port]/charging/api/token/refresh
+```
+
+with header `Content-Type: application/json` and body:
+
+```
+{
+   "refresh_token": "ibFRhNqsiHi9huM3dG7KeNtXld5cRJ",
+   "appId": "53626045d3bd4f8c84487f77944fa586"
+}
+```
+
+.. image:: ./images/user/access6.png
    :align: center
