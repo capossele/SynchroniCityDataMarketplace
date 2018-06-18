@@ -524,7 +524,7 @@ Once you have these information you can use them to generate a new access token 
 http://[marketplace_url]:[marketplace_port]/charging/api/token/refresh
 ```
 
-with header `Content-Type: application/json` and body:
+with header *Content-Type: application/json* and body:
 
 ```
 {
