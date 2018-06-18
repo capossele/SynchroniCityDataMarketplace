@@ -520,18 +520,18 @@ You will also need to retrieve the *appId* related to the data source that you w
 
 Once you have these information you can use them to generate a new access token by performing a *POST* request on this API: 
 
-``
+`
 http://[marketplace_url]:[marketplace_port]/charging/api/token/refresh
-``
+`
 
-with header ``Content-Type: application/json`` and body:
+with header `Content-Type: application/json` and body:
 
-``
+`
 {
    "refresh_token": "ibFRhNqsiHi9huM3dG7KeNtXld5cRJ",
    "appId": "53626045d3bd4f8c84487f77944fa586"
 }
-``
+`
 
 .. image:: ./images/user/access6.png
    :align: center
