@@ -12,6 +12,7 @@ config.version = {
 // The PORT used by
 config.port = 8004;
 config.host = 'proxy.docker';
+config.extPort = 8004;
 
 config.proxy = {
     enabled: true,
@@ -123,6 +124,18 @@ config.endpoints = {
         'path': 'DSUsageManagement',
         'host': 'apis.docker',
         'port': '8080',
+        'appSsl': false
+    },
+    'sla': {
+        'path': 'SLAManagement',
+        'host': 'localhost',
+        'port': config.port,
+        'appSsl': false
+    },
+    'reputation': {
+        'path': 'REPManagement',
+        'host': 'localhost',
+        'port': config.port,
         'appSsl': false
     }
 };
