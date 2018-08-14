@@ -1,0 +1,23 @@
+{
+  "name": "Orion Query",
+  "author": "acapossele",
+  "version": "1.0",
+  "module": "orion_plugin.OrionPlugin",
+  "media_types": ["NGSIv2"],
+  "formats": ["URL"],
+  "overrides": [],
+  "form": {
+    "application_id": {
+      "type": "text",
+      "label": "Application ID (Orion ID registered on the IDM, e.g., 1161ee85e21246e2b940b07e5018b1f0)",
+      "placeholder": "Application ID",
+      "mandatory": true
+    },
+    "service": {
+      "type": "text",
+      "label": "Fiware-Service (e.g., TenantRZ1)",
+      "placeholder": "Fiware-Service",
+      "mandatory": false
+    }
+  }
+}
